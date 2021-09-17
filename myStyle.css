@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.pageMargin {
+    display: flex;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+
+.headerLinks {
+    margin-left: auto;
+}
+
+
+.banner {
+    display: flex;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(63, 165, 160);
+}
+
+.bannerText {
+    width: auto;
+}
+
+.banner h1 {
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#information {
+    background-color: red;
+    height: 20vh;
+}
+
+#citation {
+    background-color: blue;
+    height: 20vh;
+}
+
+#signup {
+    background-color: red;
+    height: 20vh;
+}
+
+#thumb {
+    width: 550px;
+    overflow: hidden;
+}
+
+#capy {
+    width: 550px;
+    margin-top: -90px;
+    margin-bottom: -20px;
+}
+
+#invite-text {
+    width: 40%;
+    display: inline-block;
+}
