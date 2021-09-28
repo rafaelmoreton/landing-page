@@ -1,62 +1,209 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.pageMargin {
-    display: flex;
-    margin-left: 10em;
-    margin-right: 10em;
+body {
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
 }
 
+a {
+    text-decoration: none;
+}
 
-.headerLinks {
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-color: #3882F6;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 70px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.card p {
+    color: white;
+    font-size: 20px;
+}
+
+.right-links {
     margin-left: auto;
+    display: flex;
+    gap: 20px;
 }
 
+.image {
+    height: 300px;
+}
 
-.banner {
+.info-card {
     display: flex;
-    height: 550px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blue-container {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    width: 1000px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(63, 165, 160);
+    gap: 40px;
 }
 
-.bannerText {
-    width: auto;
+#blue-container button {
+    border: solid;
 }
 
-.banner h1 {
-    font-size: 48px;
-    font-family: 'Roboto', sans-serif;
-
+#blue-container p {
+    margin: 0px;
 }
 
-#information {
-    background-color: red;
-    height: 20vh;
+#blue-container p:first-of-type {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
-#citation {
-    background-color: blue;
-    height: 20vh;
+#logo {
+    font-weight: bold;
+    font-size: 24px;
 }
 
-#signup {
-    background-color: red;
-    height: 20vh;
+#header-bar {
+    background-color: #1F2937;
+    height: 60px;
+    color: white;
 }
 
-#thumb {
-    width: 550px;
+#top-banner {
+    background-color: #1F2937;
+    height: 475px;
+    display: flex;
+    gap: 50px;
+}
+
+#capy-baby {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 72%;
+    box-shadow: 0px 3px 20px rgb(87, 87, 87), 0px -3px 20px  rgb(87, 87, 87), 3px 0px 20px rgb(87, 87, 87), -3px 0px 20px rgb(87, 87, 87);
+}
+
+#infos {
+    height: 500px;
+    justify-content: space-around;
+}
+
+#infos p {
+    width: 270px;
+    height: 66px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#infos img:not(#lettuce) {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #3882F6;
+    border-width: 5px;
+}
+
+.lettuce-container {    
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #3882F6;
+    border-width: 5px;
     overflow: hidden;
 }
 
-#capy {
-    width: 550px;
-    margin-top: -90px;
-    margin-bottom: -20px;
+#lettuce {
+    width: 240px;
+    height: 240px;
+    position: relative;
+    top: 14px;
+    left: 6px;
 }
 
-#invite-text {
-    width: 40%;
-    display: inline-block;
+#herd {
+    object-position: 5% 0%;
+}
+
+#quote {
+    background-color: #E5E7EB;
+    height: 435px;
+    flex-direction: column;
+}
+
+#quote p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    margin: 0px;
+}
+
+#quote p:first-of-type {
+    margin-bottom: 18px;
+}
+
+#quote #citation-author {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 1000;
+    text-align: end;
+    align-self: flex-end;
+}
+
+#signup {
+    height: 360px;
+}
+
+#footer {
+    background-color: #1F2937;
+    height: 100px;
+    color: #E5E7EB;
 }
